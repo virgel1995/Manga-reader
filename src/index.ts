@@ -94,4 +94,5 @@ app.listen(process.env.PORT ?? secretConfig.port ?? cfg.http.port ?? 80, () => {
 	);
 	backup.start();
 	updatePopularCache.start();
+	console.log(os.homedir())
 });
